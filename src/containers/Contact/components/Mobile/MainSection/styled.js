@@ -43,6 +43,11 @@ const StyledForm = styled(Form)`
     height: 52px;
     border: 1px solid var(--gray-700, #2F4644) !important;
     background: var(--gray-900, #101717);
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
     &::placeholder {
       color: var(--gray-400, #708E8C);
       font-size: 14px;

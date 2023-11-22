@@ -11,7 +11,24 @@ const nextConfig = {
     formats: ['image/webp'],
     disableStaticImages: true,
     minimumCacheTTL: 60 * 60 * 24,
-    domains: ['*'],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3000',
+        pathname: '/images/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'https://saola.io',
+        pathname: '/images/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'https://saola-web.pages.dev',
+        pathname: '/images/**',
+      },
+    ],
   },
 };
 

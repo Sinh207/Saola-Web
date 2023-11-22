@@ -1,5 +1,6 @@
 export const IMAGE_CONST = {
   logo: '/images/common/logo.svg',
+  favicon: '/images/common/favicon.ico',
   layout: {
     imageFooter: '/images/layout/image-footer.png',
   },
