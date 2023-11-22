@@ -10,6 +10,7 @@ const StyledSection = styled.section`
   align-items: center;
   align-self: stretch;
   background: var(--gray-900, #101717);
+  opacity: 0;
 `;
 const StyledContainer = styled.div`
   width: 100%;

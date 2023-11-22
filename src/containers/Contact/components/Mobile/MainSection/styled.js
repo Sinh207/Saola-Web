@@ -7,6 +7,7 @@ const StyledSection = styled.section`
   height: 100%;
   padding: 24px 16px;
   background: var(--Black, #000);
+  opacity: 0;
 `;
 const StyledContainer = styled.div`
   display: flex;

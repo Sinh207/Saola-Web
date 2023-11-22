@@ -4,7 +4,7 @@ import { LIST_SERVICES } from '@containers/Services/constant';
 import { Col, Row } from 'antd';
 
 const SerMainSection = () => (
-  <StyledSection>
+  <StyledSection className="main-section">
     <StyledContainer className="container">
       {LIST_SERVICES.map((item, idx) => (
         <StyledItem key={idx}>

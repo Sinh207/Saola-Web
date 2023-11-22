@@ -38,24 +38,24 @@ export function loadComplete() {
         delay: 0.6,
       },
       0,
-    )
-    // .to(
-    //   'section:nth-child(3)',
-    //   {
-    //     y: '-100%',
-    //     delay: 0.7,
-    //   },
-    //   0,
-    // )
-    .to(
-      '.hero-section',
-      {
-        transform: 'translateY(0%)',
-        opacity: 1,
-        duration: 1.5,
-        delay: 0.8,
-        ease: 'Power3.easeOut',
-      },
-      0,
     );
+  // .to(
+  //   'section:nth-child(3)',
+  //   {
+  //     y: '-100%',
+  //     delay: 0.7,
+  //   },
+  //   0,
+  // )
+  // .to(
+  //   '.hero-section',
+  //   {
+  //     transform: 'translateY(0%)',
+  //     opacity: 1,
+  //     duration: 1.5,
+  //     delay: 0.8,
+  //     ease: 'Power3.easeOut',
+  //   },
+  //   0,
+  // );
 }

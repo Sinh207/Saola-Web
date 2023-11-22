@@ -6,7 +6,7 @@ import {
 } from './styled';
 
 const MainSection = () => (
-  <StyledSection>
+  <StyledSection className="main-section">
     <StyledContainer className="container">
       <StyledItem>
         <h5>Introduction</h5>

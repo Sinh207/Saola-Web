@@ -7,6 +7,7 @@ const StyledSection = styled.section`
   height: 100%;
   background: rgba(0, 0, 0, 0.35);
   padding: 124px;
+  opacity: 0;
 `;
 const StyledContainer = styled.div`
   width: 100%;

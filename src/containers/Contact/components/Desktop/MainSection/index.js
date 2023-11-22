@@ -47,7 +47,7 @@ const MainSection = () => {
   }, [values]);
 
   return (
-    <StyledSection>
+    <StyledSection className="main-section">
       <StyledContainer
         style={{
           backgroundImage: `url(${IMAGE_CONST.contact.backgroundMainContact})`,

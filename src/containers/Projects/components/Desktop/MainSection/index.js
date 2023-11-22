@@ -13,7 +13,7 @@ import { Col, Row } from 'antd';
 import { PROJECTS_LIST } from '@containers/Projects/constant';
 
 const MainSection = () => (
-  <StyledSection>
+  <StyledSection className="main-section">
     {
       PROJECTS_LIST.map((item, idx) => (
         <StyledContainer key={idx} className="container">

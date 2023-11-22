@@ -67,7 +67,7 @@ const SocialProofSection = () => {
   }, []);
 
   return (
-    <StyledSection className="social-proof-section">
+    <StyledSection className="main-section">
       <StyledContainer>
         <StyledH5 ref={addToRefs}>
           We rapidly transform ideas into problem-solving products, <br />
