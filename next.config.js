@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: 'export',
+  output: isProd ? 'export' : 'standalone',
   reactStrictMode: true,
   eslint: {
     dirs: ['components', 'pages', 'utils'],
