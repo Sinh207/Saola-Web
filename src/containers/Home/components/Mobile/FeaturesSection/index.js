@@ -21,6 +21,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FEATURES_LIST } from '@containers/Home/constant';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,7 +48,16 @@ const FeaturesSection = () => (
             FEATURES_LIST.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <StyledItem className={item.class}>
-                  <StyledImage src={item.image} alt={item.title} width={204} height={204} />
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={204}
+                    height={204}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                    }}
+                  />
                   <StyledContent>
                     <StyledH5>{item.title}</StyledH5>
                     <StyledSpan>{item.des}</StyledSpan>
