@@ -1,3 +1,201 @@
 {
-  "extends": "next/core-web-vitals"
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false,
+    "requireConfigFile": false
+  },
+  "extends": ["prettier", "airbnb"],
+  "plugins": [],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "off"
+    ],
+    "import/no-duplicates": [
+      "off"
+    ],
+    "import/extensions": [
+      "off"
+    ],
+    "import/order": [
+      "off"
+    ],
+    "import/no-self-import": [
+      "off"
+    ],
+    "import/no-cycle": [
+      "off"
+    ],
+    "import/no-relative-packages": [
+      "off"
+    ],
+    "import/no-named-as-default": [
+      "off"
+    ],
+    "import/no-named-as-default-member": [
+      "off"
+    ],
+    "import/named": [
+      "off"
+    ],
+    "no-console": [
+      "off"
+    ],
+    "no-promise-executor-return": [
+      "off"
+    ],
+    "react/no-unknown-property": [
+      "off"
+    ],
+    "react/no-invalid-html-attribute": [
+      "off"
+    ],
+    "react/jsx-one-expression-per-line": [
+      "off"
+    ],
+    "react/no-danger": [
+      "off"
+    ],
+    "react/jsx-wrap-multilines": [
+      "off"
+    ],
+    "import/prefer-default-export": [
+      "off"
+    ],
+    "react/state-in-constructor": [
+      "off"
+    ],
+    "react/destructuring-assignment": [
+      "off"
+    ],
+    "no-unneeded-ternary": [
+      "off"
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error"
+    ],
+    "jsx-a11y/click-events-have-key-events": [
+      "off"
+    ],
+    "jsx-a11y/control-has-associated-label": [
+      "warn"
+    ],
+    "react/no-unescaped-entities": [
+      "off"
+    ],
+    "no-nested-ternary": [
+      "off"
+    ],
+    "no-underscore-dangle": [
+      "warn"
+    ],
+    "no-use-before-define": [
+      "warn"
+    ],
+    "dot-notation": [
+      "warn"
+    ],
+    "no-param-reassign": [
+      "off"
+    ],
+    "react/react-in-jsx-scope": [
+      "off"
+    ],
+    "prefer-template": [
+      "warn"
+    ],
+    "no-plusplus": [
+      "error",
+      { "allowForLoopAfterthoughts": true }
+    ],
+    "import/no-commonjs": [
+      "error",
+      {
+        "allowConditionalRequire": true,
+        "allowRequire": true
+      }
+    ],
+    "prefer-promise-reject-errors": [
+      "off"
+    ],
+    "react/jsx-filename-extension": [
+      "off"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "html": "ignore",
+        "custom": "ignore",
+        "exceptions": [
+          ""
+        ]
+      }
+    ],
+    "consistent-return": [
+      "off"
+    ],
+    "no-return-assign": [
+      "off"
+    ],
+    "import/no-unresolved": [
+      "off"
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": [
+      "off"
+    ],
+    "react/jsx-curly-newline": [
+      "off"
+    ],
+    "camelcase": [
+      "off"
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "no-shadow": [
+      "off"
+    ],
+    "global-require": [
+      "off"
+    ],
+    "no-unused-vars": [
+      "off"
+    ],
+    "react/jsx-no-useless-fragment": [
+      "off"
+    ],
+    "react/no-unstable-nested-components": [
+      "off"
+    ],
+    "react/no-array-index-key": [
+      "off"
+    ],
+    "default-param-last": [
+      "off"
+    ],
+    "no-case-declarations": [
+      "off"
+    ],
+    "jsx-a11y/no-static-element-interactions": [
+      "off"
+    ],
+    "prefer-destructuring": [
+      "off"
+    ],
+    "react/jsx-curly-brace-presence": [
+      "off"
+    ],
+    "max-len": ["off"],
+    "no-undef": ["off"]
+  }
 }
