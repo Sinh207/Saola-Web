@@ -48,7 +48,15 @@ const DrawerMenu = ({ isOpen = false, onClose }) => {
           <div>
             {
               SOCIAL_LIST.map((item, idx) => (
-                <Image src={item.iconMb} alt={item.key} key={idx} width={32} height={32} className={item.key} />
+                <Image
+                  src={item.iconMb}
+                  alt={item.key}
+                  key={idx}
+                  width={32}
+                  height={32}
+                  className={item.key}
+                  onClick={() => window.open(item.url, '_blank')}
+                />
               ))
             }
           </div>
