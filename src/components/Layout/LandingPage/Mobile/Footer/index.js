@@ -17,7 +17,7 @@ import { IMAGE_CONST } from '@app/utils/images';
 import { OFFICE_LIST, SOCIAL_LIST } from '@app/utils/constant';
 
 const Footer = () => (
-    <StyledFooter>
+    <StyledFooter className="footer">
       <StyledContainer className="container">
         <Row gutter={53}>
           <Col xs={24} sm={24} md={24} lg={18} xl={18}>
