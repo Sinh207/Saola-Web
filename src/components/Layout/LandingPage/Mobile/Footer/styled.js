@@ -8,7 +8,9 @@ const StyledFooter = styled.footer`
   position: sticky;
   bottom: 0;
   padding: 24px 16px;
-  background: var(--White, #FFF);`;
+  background: var(--White, #FFF);
+  opacity: 0;
+`;
 const StyledContainer = styled.div`
   width: 100%;
   height: 100%;

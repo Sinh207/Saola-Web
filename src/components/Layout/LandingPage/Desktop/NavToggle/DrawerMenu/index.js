@@ -31,7 +31,6 @@ const DrawerMenu = ({ isOpen = false, onClose }) => {
               href={`/${item.key}`}
               className={`${item.key} ${route === item.route && 'active'}`}
               key={idx}
-              onClick={onClose}
             >
               {item.label}
             </StyledNavItem>
