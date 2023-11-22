@@ -101,11 +101,11 @@ a {
   text-decoration: none;
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  html {*/
-/*    color-scheme: dark;*/
-/*  }*/
-/*}*/
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
 
 .container,.container-fluid,.container-xxl,.container-xl,.container-lg,.container-md,.container-sm {
   width: 100%;
