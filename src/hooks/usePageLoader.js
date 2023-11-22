@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import gsap from 'gsap';
 
 const usePageLoader = () => {
@@ -14,6 +13,7 @@ const usePageLoader = () => {
           y: '-100%',
           delay: 0.4,
         },
+        0,
       )
       .to(
         '.hero-section',
