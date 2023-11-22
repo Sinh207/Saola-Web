@@ -65,7 +65,7 @@ const FeaturesSection = () => {
         {
           FEATURES_LIST.map((item, idx) => (
             <StyledItem ref={addToRefs} key={idx} className={item.class}>
-              <Image
+              <img
                 src={item.image}
                 alt={item.title}
                 width={204}

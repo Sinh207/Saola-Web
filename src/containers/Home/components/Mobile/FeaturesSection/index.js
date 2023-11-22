@@ -48,7 +48,7 @@ const FeaturesSection = () => (
             FEATURES_LIST.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <StyledItem className={item.class}>
-                  <Image
+                  <img
                     src={item.image}
                     alt={item.title}
                     width={204}

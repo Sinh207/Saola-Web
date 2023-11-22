@@ -10,7 +10,9 @@ import helper from '@app/utils/helper';
 const RootLayout = dynamic(() => import('@components/Layout'), {
   ssr: false,
 });
-
+const Preloader = dynamic(() => import('@components/Preloader'), {
+  ssr: false,
+});
 const StyledMain = styled.main`
   background-color: #000;
 `;
@@ -48,6 +50,7 @@ const MyApp = ({ Component, pageProps }) => {
         }
         keywords="MVP, UX/UI design, Branding & graphic design, Website development, Software development, Test automation, Dedicated team"
       />
+      <Preloader />
       <StyledMain>
         {getLayout(<Component {...pageProps} />)}
       </StyledMain>

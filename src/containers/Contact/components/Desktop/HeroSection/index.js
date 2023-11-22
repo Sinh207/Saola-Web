@@ -9,7 +9,7 @@ import {
 } from './styled';
 import { IMAGE_CONST } from '@app/utils/images';
 import { Col, Row } from 'antd';
-import { LIST_OFFICE } from '@containers/Contact/constant';
+import { OFFICE_LIST } from '@app/utils/constant';
 
 const HeroSection = () => (
   <StyledSection className="hero-section">
@@ -31,7 +31,7 @@ const HeroSection = () => (
       <StyledContact>
         <StyledListOffice>
         {
-          LIST_OFFICE.map((item, idx) => (
+          OFFICE_LIST.map((item, idx) => (
             <div>
               <span>{item.office}</span>
               <span>{item.address}</span>

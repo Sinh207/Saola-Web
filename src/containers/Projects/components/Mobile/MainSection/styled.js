@@ -20,7 +20,7 @@ const StyledContainer = styled.div`
     border-bottom: unset;
   }
 `;
-const StyledImage = styled(Image)`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
 `;

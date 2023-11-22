@@ -7,6 +7,7 @@ const StyledSection = styled.section`
   background: rgba(0, 0, 0, 0.35);
   padding: 24px 16px;
   border-bottom: 1px solid #202E2D;
+  opacity: 0;
 `;
 const StyledContainer = styled.div`
   width: 100%;

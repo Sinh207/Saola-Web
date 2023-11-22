@@ -22,6 +22,7 @@ const StyledContainer = styled.div`
   }
 `;
 const StyledNav = styled.div`
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;

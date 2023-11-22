@@ -21,9 +21,9 @@ export function loadComplete() {
   // });
   // gsap.set('.scroller', { x: '150%' });
 
-  gsap.set('.hero-section', {
-    y: '100%',
-  });
+  // gsap.set('.hero-section', {
+  //   y: '100%',
+  // });
 
   const loadCompleteTl = gsap.timeline();
   loadCompleteTl
@@ -54,26 +54,6 @@ export function loadComplete() {
         opacity: 1,
         duration: 1.5,
         delay: 0.8,
-        ease: 'Power3.easeOut',
-      },
-      0,
-    )
-    .to(
-      '.social-proof-section',
-      {
-        x: 'auto',
-        delay: 1,
-        duration: 1,
-        ease: 'Power3.easeOut',
-      },
-      0,
-    )
-    .to(
-      '.home-features-section',
-      {
-        x: 'auto',
-        delay: 1,
-        duration: 1.5,
         ease: 'Power3.easeOut',
       },
       0,

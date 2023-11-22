@@ -69,6 +69,10 @@ const StyledPrivacyPolicy = styled(Link)`
   line-height: 150%;
   text-decoration-line: underline;
 `;
+const StyledImage = styled.img`
+  width: 100%;
+  height: auto;
+`;
 
 export {
   StyledFooter,
@@ -80,4 +84,5 @@ export {
   StyledListSocial,
   StyledOther,
   StyledPrivacyPolicy,
+  StyledImage,
 };

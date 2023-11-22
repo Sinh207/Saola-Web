@@ -102,7 +102,7 @@ const StyledItemVisitNow = styled.div`
     text-decoration-line: underline;
   }
 `;
-const StyledImage = styled(Image)`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
 `;

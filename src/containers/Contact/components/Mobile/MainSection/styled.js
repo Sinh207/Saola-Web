@@ -23,7 +23,7 @@ const StyledContainer = styled.div`
     width: 100%;
   }
 `;
-const StyledImage = styled(Image)`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
   margin: auto;

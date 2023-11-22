@@ -9,7 +9,9 @@ const StyledFooter = styled.footer`
   position: sticky;
   bottom: 0;
   padding: 124px;
-  background: var(--White, #FFF);`;
+  background: var(--White, #FFF);
+  opacity: 0;
+`;
 const StyledContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -70,7 +72,7 @@ const StyledPrivacyPolicy = styled(Link)`
   line-height: 150%;
   text-decoration-line: underline;
 `;
-const StyledImage = styled(Image)`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
 `;
