@@ -34,10 +34,16 @@ const StyledBackgroundTitle = styled.div`
 `;
 const StyledContainer = styled.div`
   position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .panel {
+    will-change: transform;
+  }
   .swiper {
     .swiper-wrapper {
       .swiper-slide {
-        max-width: 90%;
+        max-width: 80%;
       }
     }
   }
@@ -48,19 +54,20 @@ const StyledItem = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  will-change: transform;
 `;
 const StyledContent = styled.div`
   display: flex;
   padding: 16px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
   align-self: stretch;
   background: var(--gray-25, #F4F7F7);
 `;
-const StyledImage = styled(Image)`
-  width: 70%;
+const StyledImage = styled.img`
+  width: 70% !important;
   height: auto;
 `;
 const StyledH5 = styled.h5`

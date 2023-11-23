@@ -20,6 +20,11 @@ const StyledContainer = styled.div`
     padding: 80px 0 0 0;
     border-bottom: unset;
   }
+  .gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+  }
 `;
 const StyledItem = styled.div`
   width: 100%;

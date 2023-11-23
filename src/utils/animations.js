@@ -21,41 +21,44 @@ export function loadComplete() {
   // });
   // gsap.set('.scroller', { x: '150%' });
 
-  // gsap.set('.hero-section', {
-  //   y: '100%',
-  // });
+  gsap.set('.hero-section, .main-section', {
+    y: '100%',
+  });
 
   const loadCompleteTl = gsap.timeline();
   loadCompleteTl
     .to('.preloader-section', {
       y: '-100%',
-      delay: 1,
-    });
-  // .to(
-  //   'section:nth-child(2)',
-  //   {
-  //     y: '-100%',
-  //     delay: 0.6,
-  //   },
-  //   0,
-  // );
-  // .to(
-  //   'section:nth-child(3)',
-  //   {
-  //     y: '-100%',
-  //     delay: 0.7,
-  //   },
-  //   0,
-  // )
-  //   .to(
-  //     '.hero-section',
-  //     {
-  //       transform: 'translateY(0%)',
-  //       opacity: 1,
-  //       duration: 1.5,
-  //       delay: 0.8,
-  //       ease: 'Power3.easeOut',
-  //     },
-  //     0,
-  //   );
+      delay: 0.3,
+    })
+    // .to(
+    //   'section:nth-child(2)',
+    //   {
+    //     y: '-100%',
+    //     delay: 0.4,
+    //   },
+    //   0,
+    // )
+    .to(
+      '.hero-section',
+      {
+        transform: 'translateY(0%)',
+        opacity: 1,
+        duration: 1,
+        delay: 0.4,
+        ease: 'Power3.easeOut',
+      },
+      0,
+    )
+    .to(
+      '.main-section',
+      {
+        transform: 'translateY(0%)',
+        opacity: 1,
+        duration: 1.5,
+        delay: 0.5,
+        ease: 'Power3.easeOut',
+      },
+      0,
+    );
 }

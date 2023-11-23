@@ -59,15 +59,11 @@ const FeaturesSection = () => {
                   {
                     item.lottie
                       ? <div id={`lottie-${item.class}`} style={{ width: '204px', height: '204px' }} />
-                      : <img
+                      : <StyledImage
                       src={item.image}
                       alt={item.title}
                       width={204}
                       height={204}
-                      style={{
-                        width: '100%',
-                        height: 'auto',
-                      }}
                       />
                   }
                   <StyledContent>

@@ -8,20 +8,12 @@ const usePageLoader = () => {
     const loadCompleteTl = gsap.timeline();
     loadCompleteTl
       .to(
-        'section:nth-child(1)',
-        {
-          y: '-100%',
-          delay: 0.4,
-        },
-        0,
-      )
-      .to(
         '.hero-section',
         {
           transform: 'translateY(0%)',
           opacity: 1,
           duration: 1,
-          delay: 0.6,
+          delay: 0.3,
           ease: 'Power3.easeOut',
         },
         0,
@@ -32,7 +24,7 @@ const usePageLoader = () => {
           transform: 'translateY(0%)',
           opacity: 1,
           duration: 1,
-          delay: 0.8,
+          delay: 0.4,
           ease: 'Power3.easeOut',
         },
         0,
@@ -43,7 +35,7 @@ const usePageLoader = () => {
           transform: 'translateY(0%)',
           opacity: 1,
           duration: 1.5,
-          delay: 0.8,
+          delay: 0.5,
           ease: 'Power3.easeOut',
         },
         0,

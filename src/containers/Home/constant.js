@@ -4,7 +4,8 @@ import { LOTTIE_FILES } from '@app/utils/lottiefiles';
 const FEATURES_LIST = [
   {
     image: IMAGE_CONST.home.thinkBigMoveForward,
-    lottie: LOTTIE_FILES.thinkBigMoveForward,
+    lottie: '',
+    // lottie: LOTTIE_FILES.thinkBigMoveForward,
     title: 'Think big move forward',
     des: 'Ordinary is boring. Creative solutions and curiosity are our way to go. We pride ourselves on pushing the boundaries to build high-performing products.',
     class: 'think-big-move-forward',
