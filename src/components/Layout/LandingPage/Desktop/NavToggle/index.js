@@ -33,7 +33,7 @@ const NavToggle = () => {
             height={96}
             onClick={() => Router.push('/')}
           />
-          <StyledNavToggle class="nav-toggle" onClick={toggleHamburger}>
+          <StyledNavToggle className="nav-toggle" onClick={toggleHamburger}>
             <span className="bar" />
             <span className="bar" />
             <span className="bar" />

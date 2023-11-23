@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: isProd ? 'export' : 'standalone',
-  reactStrictMode: true,
+  reactStrictMode: false,
   eslint: {
     dirs: ['components', 'pages', 'utils'],
   },

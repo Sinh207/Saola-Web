@@ -1,6 +1,7 @@
 export const IMAGE_CONST = {
   logo: '/images/common/logo.svg',
   favicon: '/images/common/favicon.ico',
+  cover: '/images/common/cover.png',
   layout: {
     imageFooter: '/images/layout/image-footer.png',
   },
@@ -28,6 +29,7 @@ export const IMAGE_CONST = {
     thinkBigMoveForward: '/images/home/think-big-move-forward.png',
     winWinPartnership: '/images/home/win-win-partnership.png',
     logoTevi: '/images/home/logo-tevi.svg',
+    logoFG: '/images/home/logo-fg.svg',
     logoChamniIsEye: '/images/home/logo-chamni\'s-eye.svg',
     logoNamVietMedia: '/images/home/logo-namviet-media.svg',
     logoUnigon: '/images/home/logo-unigon.svg',

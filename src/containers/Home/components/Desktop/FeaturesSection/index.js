@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import lottie from 'lottie-web';
 
 // styled
 import {
@@ -17,7 +18,6 @@ import { IMAGE_CONST } from '@app/utils/images';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FEATURES_LIST } from '@containers/Home/constant';
-import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,6 +49,17 @@ const FeaturesSection = () => {
     });
   }, []);
 
+  useEffect(() => {
+    FEATURES_LIST.forEach((item) => (
+      lottie.loadAnimation({
+        container: document.querySelector(`#lottie-${item.class}`),
+        renderer: 'svg',
+        autoplay: true,
+        path: item.lottie,
+      })
+    ));
+  }, []);
+
   return (
     <StyledSection className="home-features-section">
       <StyledBackgroundTitle
@@ -65,7 +76,7 @@ const FeaturesSection = () => {
         {
           FEATURES_LIST.map((item, idx) => (
             <StyledItem ref={addToRefs} key={idx} className={item.class}>
-              <img
+               <img
                 src={item.image}
                 alt={item.title}
                 width={204}
@@ -74,7 +85,8 @@ const FeaturesSection = () => {
                   width: '100%',
                   height: 'auto',
                 }}
-              />
+               />
+              {/* <div id={`lottie-${item.class}`} /> */}
               <StyledContent>
                 <StyledH5>{item.title}</StyledH5>
                 <StyledSpan>{item.des}</StyledSpan>

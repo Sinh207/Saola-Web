@@ -49,6 +49,7 @@ const StyledItem = styled.div`
   flex-direction: column;
   align-items: flex-start;
   display: flex;
+  opacity: 0;
   &.think-big-move-forward {
     grid-area: 1 / 1 / 2 / 5;
   }

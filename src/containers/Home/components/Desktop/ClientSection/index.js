@@ -10,87 +10,9 @@ import {
 } from './styled';
 import { IMAGE_CONST } from '@app/utils/images';
 import Image from 'next/image';
+import { CLIENT_LIST } from '@containers/Home/constant';
 
-const ClientSection = () => {
-  const LIST_CLIENT = [
-    {
-      image: IMAGE_CONST.home.logoTevi,
-      key: 'tevi',
-      url: '',
-    },
-    {
-      image: '',
-      key: '',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoChamniIsEye,
-      key: 'chamni-eye',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoNamVietMedia,
-      key: 'namviet-media',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoUnigon,
-      key: 'unigons',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoAltamedia,
-      key: 'alta-media',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoMarathon,
-      key: 'marathon',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoFptplay,
-      key: 'fptplay',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoLunarush,
-      key: 'lunarush',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoUrekaMedia,
-      key: 'ureka-media',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoNgheLuon,
-      key: 'nghe-luon',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoTefal,
-      key: 'tefal',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoAsiaVina,
-      key: 'asia-vina',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoAnlene,
-      key: 'anlene',
-      url: '',
-    },
-    {
-      image: IMAGE_CONST.home.logoThvl,
-      key: 'thvli',
-      url: '',
-    },
-  ];
-
-  return (
+const ClientSection = () => (
     <StyledSection>
       <StyledBackgroundImage
         style={{
@@ -104,7 +26,7 @@ const ClientSection = () => {
           <StyledSpan>Who we’ve worked with</StyledSpan>
           <StyledListItem>
             <div className="list">
-              {LIST_CLIENT.map((item, idx) => (
+              {CLIENT_LIST.map((item, idx) => (
                 <StyledItem key={idx}>
                   <div className="image-warp">
                     {
@@ -118,7 +40,6 @@ const ClientSection = () => {
         </StyledContainer>
       </StyledBackgroundImage>
     </StyledSection>
-  );
-};
+);
 
 export default ClientSection;

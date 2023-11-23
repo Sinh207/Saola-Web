@@ -41,7 +41,7 @@ const MyApp = ({ Component, pageProps }) => {
         schemaType="article"
         title="Saola"
         description="We are experts in crafting bold visuals, distinctive brand identities, innovative products, and immersive websites. Whether you want to elevate your company's visual language, build an MVP, or explore a new idea, we'll take care of everything."
-        image={IMAGE_CONST.logo}
+        image={IMAGE_CONST.cover}
         createdAt={
           helper.dateConvertFullTimeString(new Date().getTime())
         }
