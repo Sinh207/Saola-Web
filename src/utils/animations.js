@@ -29,7 +29,7 @@ export function loadComplete() {
   loadCompleteTl
     .to('.preloader-section', {
       y: '-100%',
-      delay: 0.5,
+      delay: 1,
     });
   // .to(
   //   'section:nth-child(2)',

@@ -47,7 +47,7 @@ const StyledContainer = styled.div`
 `;
 const StyledItem = styled.div`
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   opacity: 0;
   &.think-big-move-forward {
