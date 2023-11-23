@@ -76,17 +76,20 @@ const FeaturesSection = () => {
         {
           FEATURES_LIST.map((item, idx) => (
             <StyledItem ref={addToRefs} key={idx} className={item.class}>
-               <img
-                src={item.image}
-                alt={item.title}
-                width={204}
-                height={204}
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                }}
-               />
-              {/* <div id={`lottie-${item.class}`} /> */}
+              {
+                item.lottie
+                  ? <div id={`lottie-${item.class}`} style={{ width: '204px', height: '204px' }} />
+                  : <img
+                  src={item.image}
+                  alt={item.title}
+                  width={204}
+                  height={204}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
+                  />
+              }
               <StyledContent>
                 <StyledH5>{item.title}</StyledH5>
                 <StyledSpan>{item.des}</StyledSpan>

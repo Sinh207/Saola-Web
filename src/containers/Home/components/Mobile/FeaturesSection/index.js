@@ -1,3 +1,6 @@
+import React, { useEffect, useRef } from 'react';
+import lottie from 'lottie-web';
+
 // styled
 import {
   StyledSection,
@@ -11,21 +14,26 @@ import {
 } from './styled';
 import { IMAGE_CONST } from '@app/utils/images';
 
-// gsap
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 import { FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FEATURES_LIST } from '@containers/Home/constant';
-import Image from 'next/image';
 
-gsap.registerPlugin(ScrollTrigger);
+const FeaturesSection = () => {
+  useEffect(() => {
+    FEATURES_LIST.forEach((item) => (
+      lottie.loadAnimation({
+        container: document.querySelector(`#lottie-${item.class}`),
+        renderer: 'svg',
+        autoplay: true,
+        path: item.lottie,
+      })
+    ));
+  }, []);
 
-const FeaturesSection = () => (
+  return (
     <StyledSection>
       <StyledBackgroundTitle
         style={{
@@ -48,16 +56,20 @@ const FeaturesSection = () => (
             FEATURES_LIST.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <StyledItem className={item.class}>
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    width={204}
-                    height={204}
-                    style={{
-                      width: '100%',
-                      height: 'auto',
-                    }}
-                  />
+                  {
+                    item.lottie
+                      ? <div id={`lottie-${item.class}`} style={{ width: '204px', height: '204px' }} />
+                      : <img
+                      src={item.image}
+                      alt={item.title}
+                      width={204}
+                      height={204}
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                      }}
+                      />
+                  }
                   <StyledContent>
                     <StyledH5>{item.title}</StyledH5>
                     <StyledSpan>{item.des}</StyledSpan>
@@ -69,6 +81,7 @@ const FeaturesSection = () => (
         </Swiper>
       </StyledContainer>
     </StyledSection>
-);
+  );
+};
 
 export default FeaturesSection;
