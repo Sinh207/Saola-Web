@@ -48,23 +48,23 @@ const SocialProofSection = () => {
     }
   };
 
-  useEffect(() => {
-    ref.current.forEach((el) => {
-      gsap.fromTo(el, {
-        autoAlpha: 0,
-      }, {
-        autoAlpha: 1,
-        left: 0,
-        lazy: true,
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: el,
-          start: 'top bottom-=100',
-          toggleActions: 'play none none reverse',
-        },
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   ref.current.forEach((el) => {
+  //     gsap.fromTo(el, {
+  //       autoAlpha: 0,
+  //     }, {
+  //       autoAlpha: 1,
+  //       left: 0,
+  //       lazy: true,
+  //       duration: 0.5,
+  //       scrollTrigger: {
+  //         trigger: el,
+  //         start: 'top bottom-=100',
+  //         toggleActions: 'play none none reverse',
+  //       },
+  //     });
+  //   });
+  // }, []);
 
   return (
     <StyledSection className="main-section">
