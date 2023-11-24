@@ -47,15 +47,17 @@ const MainSection = () => {
   };
 
   useEffect(() => {
-    gsap.utils.toArray('.gs_reveal').forEach((elem) => {
-      hide(elem); // assure that the element is hidden when scrolled into view
-      ScrollTrigger.create({
-        trigger: elem,
-        onEnter() { animateFrom(elem); },
-        onEnterBack() { animateFrom(elem, -1); },
-        onLeave() { hide(elem); }, // assure that the element is hidden when scrolled into view
+    setTimeout(() => {
+      gsap.utils.toArray('.gs_reveal').forEach((elem) => {
+        hide(elem); // assure that the element is hidden when scrolled into view
+        ScrollTrigger.create({
+          trigger: elem,
+          onEnter() { animateFrom(elem); },
+          onEnterBack() { animateFrom(elem, -1); },
+          onLeave() { hide(elem); }, // assure that the element is hidden when scrolled into view
+        });
       });
-    });
+    }, 1000);
   }, []);
 
   return (
