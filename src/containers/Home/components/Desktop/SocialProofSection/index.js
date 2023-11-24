@@ -5,7 +5,7 @@ import {
   StyledH5,
   StyledH2,
 } from './styled';
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -42,29 +42,41 @@ const SocialProofSection = () => {
     },
   ];
 
+  const animateFrom = (elem, direction) => {
+    direction = direction || 1;
+    const x = 0;
+    const y = -100 * direction;
+    elem.style.transform = `translate(${x}px, ${y}px)`;
+    elem.style.opacity = '0';
+    gsap.fromTo(elem, { x, y, autoAlpha: 0 }, {
+      duration: 1.25,
+      x: 0,
+      y: 0,
+      autoAlpha: 1,
+      ease: 'expo',
+      overwrite: 'auto',
+    });
+  };
+  const hide = (elem) => {
+    gsap.set(elem, { autoAlpha: 0 });
+  };
   const addToRefs = (el) => {
     if (el && !ref.current.includes(el)) {
       ref.current.push(el);
     }
   };
 
-  // useEffect(() => {
-  //   ref.current.forEach((el) => {
-  //     gsap.fromTo(el, {
-  //       autoAlpha: 0,
-  //     }, {
-  //       autoAlpha: 1,
-  //       left: 0,
-  //       lazy: true,
-  //       duration: 0.5,
-  //       scrollTrigger: {
-  //         trigger: el,
-  //         start: 'top bottom-=100',
-  //         toggleActions: 'play none none reverse',
-  //       },
-  //     });
-  //   });
-  // }, []);
+  useLayoutEffect(() => {
+    ref.current.forEach((elem) => {
+      hide(elem); // assure that the element is hidden when scrolled into view
+      ScrollTrigger.create({
+        trigger: elem,
+        onEnter() { animateFrom(elem); },
+        onEnterBack() { animateFrom(elem, -1); },
+        onLeave() { hide(elem); }, // assure that the element is hidden when scrolled into view
+      });
+    });
+  }, []);
 
   return (
     <StyledSection className="main-section">
@@ -75,7 +87,7 @@ const SocialProofSection = () => {
         </StyledH5>
         {
           PRODUCTS.map((item) => (
-            <StyledH2 ref={addToRefs} key={item.key} className={item.key}>{item.title}</StyledH2>
+            <StyledH2 ref={addToRefs} key={item.key} className={`gs-reveal ${item.key}`}>{item.title}</StyledH2>
           ))
         }
       </StyledContainer>

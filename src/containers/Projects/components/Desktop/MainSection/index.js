@@ -11,7 +11,7 @@ import {
 } from './styled';
 import { Col, Row } from 'antd';
 import { PROJECTS_LIST } from '@containers/Projects/constant';
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -46,10 +46,9 @@ const MainSection = () => {
     gsap.set(elem, { autoAlpha: 0 });
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.utils.toArray('.gs_reveal').forEach((elem) => {
       hide(elem); // assure that the element is hidden when scrolled into view
-
       ScrollTrigger.create({
         trigger: elem,
         onEnter() { animateFrom(elem); },

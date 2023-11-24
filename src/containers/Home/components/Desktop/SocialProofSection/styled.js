@@ -22,6 +22,11 @@ const StyledContainer = styled.div`
   gap: 32px;
   flex: 1 0 0;
   background: var(--White, #FFF);
+  .gs-reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform;
+  }
 `;
 const StyledH5 = styled.h5`
   color: var(--gray-500, #4F7471);
@@ -30,6 +35,9 @@ const StyledH5 = styled.h5`
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 30px */
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
   @media(min-width: 640px) {
     font-size: 15px;
   }
@@ -51,6 +59,9 @@ const StyledH2 = styled.h2`
   font-weight: 600;
   line-height: 72px; /* 150% */
   letter-spacing: -0.96px;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
   @media(min-width: 640px) {
     font-size: 40px;
   }

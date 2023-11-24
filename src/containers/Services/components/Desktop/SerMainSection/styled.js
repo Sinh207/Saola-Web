@@ -17,6 +17,11 @@ const StyledContainer = styled.div`
   gap: 80px;
   align-self: stretch;
   background: var(--Black, #000);
+  .gs-reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform;
+  }
 `;
 const StyledItem = styled.div`
   width: 100%;
