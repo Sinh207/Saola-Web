@@ -3,7 +3,7 @@ import gsap from 'gsap';
 
 export const lenis = new Lenis({
   smoothWheel: true,
-  duration: 2,
+  duration: 1,
   easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)),
 });
 
@@ -15,12 +15,6 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 export function loadComplete() {
-  // gsap.set('.hero-section .text-content *', {
-  //   transform: 'translateY(70%)',
-  //   opacity: 0,
-  // });
-  // gsap.set('.scroller', { x: '150%' });
-
   gsap.set('.hero-section, .main-section', {
     y: '100%',
   });
@@ -31,14 +25,6 @@ export function loadComplete() {
       y: '-100%',
       delay: 0.3,
     })
-    // .to(
-    //   'section:nth-child(2)',
-    //   {
-    //     y: '-100%',
-    //     delay: 0.4,
-    //   },
-    //   0,
-    // )
     .to(
       '.hero-section',
       {
