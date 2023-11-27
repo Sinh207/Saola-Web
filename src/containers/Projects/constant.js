@@ -60,7 +60,7 @@ const PROJECTS_LIST = [
     ],
     timeline: '2021-2022',
     image: IMAGE_CONST.projects.imageNgheLuon,
-    url: '',
+    url: 'http://www.ngheluon.vn/',
   },
   {
     name: 'Tefal',

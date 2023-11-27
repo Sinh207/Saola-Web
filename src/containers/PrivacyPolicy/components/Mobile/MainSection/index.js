@@ -1,4 +1,3 @@
-// styled
 import {
   StyledSection,
   StyledContainer,

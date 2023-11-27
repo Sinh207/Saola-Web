@@ -18,7 +18,7 @@ const SerHowSection = () => (
       <Row gutter={[0, 24]}>
         {
           HOW_LIST.map((item, idx) => (
-            <Col span={24}>
+            <Col span={24} key={idx}>
               <StyledItem style={{
                 backgroundImage: `url(${IMAGE_CONST.services.backgroundSerHow})`,
               }}

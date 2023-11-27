@@ -36,7 +36,7 @@ const MyApp = ({ Component, pageProps }) => {
         />
       </Head>
       <SEO
-        url="https://saola.io/"
+        url="https://saola.tech/"
         openGraphType="website"
         schemaType="article"
         title="Saola"

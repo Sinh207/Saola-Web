@@ -51,7 +51,14 @@ const Footer = () => (
               <StyledListSocial>
                 {
                   SOCIAL_LIST.map((item, idx) => (
-                    <Image src={item.icon} alt={item.key} key={idx} width={32} height={32} />
+                    <Image
+                      src={item.icon}
+                      alt={item.key}
+                      key={idx}
+                      width={32}
+                      height={32}
+                      onClick={() => window.open(item.url, '_blank')}
+                    />
                   ))
                 }
               </StyledListSocial>

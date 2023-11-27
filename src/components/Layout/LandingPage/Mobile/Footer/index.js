@@ -33,7 +33,7 @@ const Footer = () => (
               <Row gutter={[0, 16]}>
                 {
                   OFFICE_LIST.map((item, idx) => (
-                    <Col span={24}>
+                    <Col span={24} key={idx}>
                       <StyledOfficeAddress>
                         <StyledTextCustom fontSize="16px" fontWeight="400" color="#91A8A7">
                           {item.office}
@@ -51,7 +51,14 @@ const Footer = () => (
               <StyledListSocial>
                 {
                   SOCIAL_LIST.map((item, idx) => (
-                    <Image src={item.icon} alt={item.key} key={idx} width={32} height={32} />
+                    <Image
+                      src={item.icon}
+                      alt={item.key}
+                      key={idx}
+                      width={32}
+                      height={32}
+                      onClick={() => window.open(item.url, '_blank')}
+                    />
                   ))
                 }
               </StyledListSocial>
