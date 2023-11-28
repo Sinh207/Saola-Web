@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.2.6",
     "@studio-freight/lenis": "^1.0.27",
     "antd": "^5.11.1",
     "framer-motion": "^10.16.5",

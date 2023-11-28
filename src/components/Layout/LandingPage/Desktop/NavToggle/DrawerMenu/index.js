@@ -24,7 +24,7 @@ const DrawerMenu = ({ isOpen = false, onClose }) => {
       zIndex="9"
       closeIcon={false}
     >
-      <StyledContainer>
+      <StyledContainer className="container">
         <StyledNav>
           {MENU_NAVIGATE.map((item, idx) => (
             <StyledNavItem

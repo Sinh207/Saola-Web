@@ -104,14 +104,14 @@ const StyledSocial = styled.div`
   justify-content: center;
   align-items: flex-end;
   gap: 10px;
+  animation: fadeInRight 0.9s ease-in-out;
   span {
     color: var(--gray-300, #91A8A7);
     text-align: right;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 27px */
-    animation: fadeInRight 0.8s ease-in-out;
+    line-height: 150%;
   }
   div {
     display: flex;
@@ -119,21 +119,6 @@ const StyledSocial = styled.div`
     align-items: center;
     gap: 16px;
     align-self: stretch;
-    .linkedin {
-      animation: fadeInRight 0.9s ease-in-out;
-    }
-    .ins {
-      animation: fadeInRight 1s ease-in-out;
-    }
-    .tiktok {
-      animation: fadeInRight 1.1s ease-in-out;
-    }
-    .tevi {
-      animation: fadeInRight 1.2s ease-in-out;
-    }
-    .facebook {
-      animation: fadeInRight 1.3s ease-in-out;
-    }
   }
 `;
 

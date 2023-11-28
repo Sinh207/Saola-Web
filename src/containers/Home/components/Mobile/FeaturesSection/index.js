@@ -14,14 +14,17 @@ import {
 } from './styled';
 import { IMAGE_CONST } from '@app/utils/images';
 
-import { FreeMode } from 'swiper/modules';
+import { FreeMode, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FEATURES_LIST } from '@containers/Home/constant';
 
 const FeaturesSection = () => {
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+
   useEffect(() => {
     FEATURES_LIST.forEach((item) => (
       lottie.loadAnimation({
@@ -50,7 +53,10 @@ const FeaturesSection = () => {
           spaceBetween={16}
           freeMode
           lazy
-          modules={[FreeMode]}
+          modules={[FreeMode, Scrollbar]}
+          scrollbar={{
+            hide: false,
+          }}
         >
           {
             FEATURES_LIST.map((item, idx) => (

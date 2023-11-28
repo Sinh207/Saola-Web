@@ -36,7 +36,7 @@ const SOCIAL_LIST = [
 const OFFICE_LIST = [
   {
     office: 'Singapore Office',
-    address: '470 North Bridge Road, #05-12 Bugis Cube, Singapore, Singapore',
+    address: '470 North Bridge Road, #05-12 Bugis Cube, Singapore (188735)',
   },
   {
     office: 'Saigon Office',

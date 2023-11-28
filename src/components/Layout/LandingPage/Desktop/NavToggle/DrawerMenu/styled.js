@@ -37,7 +37,7 @@ const StyledContainer = styled.div`
 const StyledNav = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 16px 36px 0 16px;
+  //padding: 16px 36px 0 16px;
   align-items: flex-start;
   align-self: stretch;
 `;
@@ -104,6 +104,7 @@ const StyledSocial = styled.div`
   justify-content: center;
   align-items: flex-end;
   gap: 10px;
+  animation: fadeInRight 0.9s ease-in-out;
   span {
     color: var(--gray-300, #91A8A7);
     text-align: right;
@@ -111,7 +112,6 @@ const StyledSocial = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
-    animation: fadeInRight 0.8s ease-in-out;
   }
   div {
     display: flex;
@@ -119,21 +119,6 @@ const StyledSocial = styled.div`
     align-items: center;
     gap: 16px;
     align-self: stretch;
-    .linkedin {
-      animation: fadeInRight 0.9s ease-in-out;
-    }
-    .ins {
-      animation: fadeInRight 1s ease-in-out;
-    }
-    .tiktok {
-      animation: fadeInRight 1.1s ease-in-out;
-    }
-    .tevi {
-      animation: fadeInRight 1.2s ease-in-out;
-    }
-    .facebook {
-      animation: fadeInRight 1.3s ease-in-out;
-    }
   }
 `;
 
