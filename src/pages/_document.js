@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
             href={IMAGE_CONST.favicon}
             sizes="any"
           />
+          <script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/44515959.js" />
         </Head>
         <body>
           <Main />

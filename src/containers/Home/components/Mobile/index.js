@@ -11,7 +11,7 @@ const HomeMobile = () => (
     <SocialProofSection />
     <FeaturesSection />
     <ClientSection />
-    <CustomerFeedbackSection />
+    {/* <CustomerFeedbackSection /> */}
   </>
 );
 

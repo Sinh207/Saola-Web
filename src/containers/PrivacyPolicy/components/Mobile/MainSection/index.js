@@ -3,6 +3,7 @@ import {
   StyledContainer,
   StyledItem,
 } from './styled';
+import { COMPANY_EMAIL } from '@app/utils/constant';
 
 const MainSection = () => (
   <StyledSection className="main-section">
@@ -137,7 +138,7 @@ const MainSection = () => (
         <h5>Contact Us</h5>
         <span>
           If you have any questions about this Privacy Policy, please contact us by email:<br />
-          <a href="mailto:hello@saola.io">hello@saola.io</a>
+          <a href={`mailto:${COMPANY_EMAIL}`}>{COMPANY_EMAIL}</a>
         </span>
       </StyledItem>
     </StyledContainer>

@@ -11,6 +11,7 @@ import {
 } from './styled';
 import { Col, Row } from 'antd';
 import { MENU_NAVIGATE } from '@components/Layout/LandingPage/constant';
+import { COMPANY_EMAIL } from '@app/utils/constant';
 
 const Header = () => {
   const { route } = Router;
@@ -43,7 +44,7 @@ const Header = () => {
           </Col>
           <Col xs={4} sm={4} md={4} lg={4} xl={4}>
             <StyledNav>
-              <a href="mailto:hello@saola.io">hello@saola.io</a>
+              <a href={`mailto:${COMPANY_EMAIL}`}>{COMPANY_EMAIL}</a>
             </StyledNav>
           </Col>
         </Row>

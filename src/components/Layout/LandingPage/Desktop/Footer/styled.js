@@ -42,6 +42,7 @@ const StyledH2 = styled.h2`
   font-weight: 500;
   line-height: 120%; /* 115.2px */
   text-decoration-line: underline;
+  cursor: pointer;
 `;
 const StyledOfficeAddress = styled.div`
   display: flex;

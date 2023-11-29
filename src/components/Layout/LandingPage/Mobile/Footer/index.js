@@ -15,6 +15,7 @@ import { Col, Row } from 'antd';
 import Image from 'next/image';
 import { IMAGE_CONST } from '@app/utils/images';
 import { OFFICE_LIST, SOCIAL_LIST } from '@app/utils/constant';
+import Router from 'next/router';
 
 const Footer = () => (
     <StyledFooter className="footer">
@@ -25,7 +26,7 @@ const Footer = () => (
               <StyledTextCustom fontSize="16px" fontWeight="400" color="#101717">
                 Ready to bring your ideas to life?
               </StyledTextCustom>
-              <StyledH2>
+              <StyledH2 onClick={() => Router.push('/contact')}>
                 Now is always the right time to start!
               </StyledH2>
             </StyledBLock>

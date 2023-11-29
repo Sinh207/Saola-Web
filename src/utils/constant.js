@@ -1,5 +1,6 @@
 import { IMAGE_CONST } from '@app/utils/images';
 
+const COMPANY_EMAIL = 'contact@saola.tech';
 const SOCIAL_LIST = [
   {
     icon: IMAGE_CONST.social.iconFacebook,
@@ -32,7 +33,6 @@ const SOCIAL_LIST = [
     url: 'https://www.linkedin.com/company/saolahq/',
   },
 ];
-
 const OFFICE_LIST = [
   {
     office: 'Singapore Office',
@@ -49,6 +49,7 @@ const OFFICE_LIST = [
 ];
 
 export {
+  COMPANY_EMAIL,
   SOCIAL_LIST,
   OFFICE_LIST,
 };

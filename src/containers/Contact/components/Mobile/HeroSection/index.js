@@ -9,7 +9,7 @@ import {
 } from './styled';
 import { IMAGE_CONST } from '@app/utils/images';
 import { Col, Row } from 'antd';
-import { OFFICE_LIST } from '@app/utils/constant';
+import { COMPANY_EMAIL, OFFICE_LIST } from '@app/utils/constant';
 
 const HeroSection = () => (
   <StyledSection className="hero-section">
@@ -41,7 +41,7 @@ const HeroSection = () => (
         </StyledListOffice>
         <StyledEmail>
           <span>Just say hi!</span>
-          <a href="mailto:hello@saola.io">hello@saola.io</a>
+          <a href={`mailto:${COMPANY_EMAIL}`}>{COMPANY_EMAIL}</a>
         </StyledEmail>
       </StyledContact>
     </StyledContainer>

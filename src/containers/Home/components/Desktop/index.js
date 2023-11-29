@@ -11,7 +11,7 @@ const HomeDesktop = () => (
     <SocialProofSection />
     <FeaturesSection />
     <ClientSection />
-    <CustomerFeedbackSection />
+    {/* <CustomerFeedbackSection /> */}
   </>
 );
 

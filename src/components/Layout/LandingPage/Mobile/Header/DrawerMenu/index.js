@@ -10,7 +10,7 @@ import {
 import { MENU_NAVIGATE } from '@components/Layout/LandingPage/constant';
 import Router from 'next/router';
 import Image from 'next/image';
-import { SOCIAL_LIST } from '@app/utils/constant';
+import { COMPANY_EMAIL, SOCIAL_LIST } from '@app/utils/constant';
 
 const DrawerMenu = ({ isOpen = false, onClose }) => {
   const { route } = Router;
@@ -40,7 +40,7 @@ const DrawerMenu = ({ isOpen = false, onClose }) => {
           <span>
             Lets talk
           </span>
-          <a href="mailto:hello@saola.io">hello@saola.io</a>
+          <a href={`mailto:${COMPANY_EMAIL}`}>{COMPANY_EMAIL}</a>
         </StyledLetsTalk>
         <StyledSocial>
           <span>Follow</span>
